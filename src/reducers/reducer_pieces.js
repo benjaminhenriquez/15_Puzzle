@@ -1,12 +1,11 @@
 // import { FETCH_WEATHER } from '../actions/index'
 
 
-export default function (state = []){
+export function piecesReducer(state = [], action){
 
-  // switch (action.type){
-  //   case FETCH_WEATHER:
-  //
-  //     return [ action.payload.data, ...state ];
-  // }
+  switch (action.type){
+    case "SET_BOARD":
+      return state;
+  }
   return state;
 }
