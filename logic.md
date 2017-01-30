@@ -42,3 +42,13 @@ else if array[id-1]!= "" && (array[id]=== "" || array[id-2] || array[id-4]=== ""
     array[indexOf("")] = array[id-1]
     array[id-1] = ""
 }
+
+
+Ask if ready to scramble
+create button in app (will double as button for reset)
+implement logic
+if not possible have a button to reset
+once it equals start array send an alert and have them start again
+
+
+then make it pretty

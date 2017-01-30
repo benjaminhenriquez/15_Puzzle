@@ -8,6 +8,7 @@ export default class App extends Component {
     return (
       <div>
         < Board />
+        <input type="button" value="Start!"/>
       </div>
     );
   }

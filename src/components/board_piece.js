@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 // import ReactBoard from 'react-board';
 
 class BoardPiece extends Component {
-  
+
   render(){
     return(
-      <div>{this.props.pieces}</div>
+      <div>{this.props.pieces[this.props.id-1]}</div>
     );
   }
 };
