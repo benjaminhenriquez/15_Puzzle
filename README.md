@@ -32,3 +32,19 @@ yarn install
 ```
 
 if you have yarn available. 
+
+### Viewing App
+
+Once npm packages are installed, you can start a local server on computer and view application on browser using 
+
+```
+npm start
+```
+
+or 
+
+```
+yarn start
+```
+
+on local terminal. 
