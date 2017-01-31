@@ -9,13 +9,13 @@ export default class Board extends Component {
 
     return (
       <table>
-        <tbody>{this.renderBoard()}</tbody>
+        <tbody>{this.createBoard()}</tbody>
       </table>
     )
   }
 
-  renderBoard(){
-    //this class method renders the table with each of the BoardPiece containers
+  createBoard(){
+    //this class method creates the table with each of the BoardPiece containers
     let table = [];
 
     for(let id = 1; id<= 16; id+=4){
