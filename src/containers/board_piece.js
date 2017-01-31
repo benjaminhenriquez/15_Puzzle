@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 import { movePieces } from '../actions/index'
-import '../../style/index.css'
+import '../style/index.css'
 
 
 class BoardPiece extends Component {

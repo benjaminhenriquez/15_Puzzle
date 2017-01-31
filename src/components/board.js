@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import BoardPiece from '../containers/board_piece';
-import '../../style/index.css'
+import '../style/index.css'
 
 export default class Board extends Component {
 
