@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
-// import ReactBoard from 'react-board';
-
-import BoardPiece from './board_piece';
+import BoardPiece from '../containers/board_piece';
 import '../../style/index.css'
 
-class Board extends Component {
-
-
+export default class Board extends Component {
 
   render() {
 
     return (
-      <table className="table">
+      <table>
       <tbody>
         <tr>
           <td><BoardPiece id="1" /></td>
@@ -45,9 +40,3 @@ class Board extends Component {
     )
   }
 }
-
-function mapStateToProps( {pieces} ){
-  return {pieces};
-}
-
-export default connect(mapStateToProps)(Board);
