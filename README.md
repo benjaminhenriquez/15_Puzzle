@@ -1,33 +1,34 @@
-# Project Title
+# 15_Puzzle 
 
-One Paragraph of project description goes here
+This is an app I built as a Hopscotch Javascript Coding Challenge. I used React and Redux libraries to create a responsive single page application. Pieces can be moved one, two or three at at a time to solve puzzle. Puzzle must be scrambled before ready to play. If unsolvable, button can be clicked to randomize board once more. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This folder can be forked from github repo and hosted on local server. You will only need to install npm packages. 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You will need to make sure that your computer is running the most up to date node.js server. You can do this through terminal if you have access to brew. Type
 
 ```
-Give examples
+brew update
+brew install node
+
 ```
+into your terminal to update and install. 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+All necessary npm packages are listed in package.json file. You will need to install npm package with either
 
 ```
-Give the example
+npm install
 ```
 
-And repeat
+or 
 
 ```
-until finished
+yarn install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+if you have yarn available. 
