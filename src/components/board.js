@@ -9,34 +9,25 @@ export default class Board extends Component {
 
     return (
       <table>
-      <tbody>
-        <tr>
-          <td><BoardPiece id="1" /></td>
-          <td><BoardPiece id="2" /></td>
-          <td><BoardPiece id="3" /></td>
-          <td><BoardPiece id="4" /></td>
-        </tr>
-        <tr>
-          <td><BoardPiece id="5" /></td>
-          <td><BoardPiece id="6" /></td>
-          <td><BoardPiece id="7" /></td>
-          <td><BoardPiece id="8" /></td>
-        </tr>
-        <tr>
-          <td><BoardPiece id="9" /></td>
-          <td><BoardPiece id="10" /></td>
-          <td><BoardPiece id="11" /></td>
-          <td><BoardPiece id="12" /></td>
-        </tr>
-        <tr>
-          <td><BoardPiece id="13" /></td>
-          <td><BoardPiece id="14" /></td>
-          <td><BoardPiece id="15" /></td>
-          <td><BoardPiece id="16" /></td>
-        </tr>
-        </tbody>
-
+        <tbody>{this.renderBoard()}</tbody>
       </table>
     )
   }
+
+  renderBoard(){
+    //this class method renders the table with each of the BoardPiece containers
+    let table = [];
+
+    for(let id = 1; id<= 16; id+=4){
+      let row = []
+
+      for(let j = 0; j<= 3; j++){
+        row.push(<td><BoardPiece id={id+j} /></td>)
+      }
+      table.push(<tr>{row}</tr>)
+    }
+
+    return table;
+  }
+
 }
