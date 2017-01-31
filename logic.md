@@ -44,10 +44,14 @@ else if array[id-1]!= "" && (array[id]=== "" || array[id-2] || array[id-4]=== ""
 }
 
 
-Ask if ready to scramble
-create button in app (will double as button for reset)
+button to start
+  on click event have array scramble
+
 implement logic
+
 if not possible have a button to reset
+(this button will only show up if the other does not separate fields but only one will appear) on click event have array scramble
+
 once it equals start array send an alert and have them start again
 
 
