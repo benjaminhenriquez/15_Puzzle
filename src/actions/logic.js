@@ -85,15 +85,10 @@ function common(array, id){
   }
 
   else if (id%4 === 2 || id === 2){
-    if(array[id]=== ""){
+    if(array[id]=== "" || array[id-2]=== ""){
       array[array.indexOf("")] = array[id-1];
       array[id-1] = "";
       return array;
-    }
-    else if(array[id-2]=== ""){
-        array[array.indexOf("")] = array[id-1];
-        array[id-1] = "";
-        return array;
     }
     else if (array[id+1]=== ""){
       array[id+1] = array[id];
@@ -107,15 +102,10 @@ function common(array, id){
   }
 
   else if (id%4 === 3  || id === 3){
-    if(array[id]=== ""){
+    if(array[id]=== "" || array[id-2]=== ""){
       array[array.indexOf("")] = array[id-1];
       array[id-1] = "";
       return array;
-    }
-    else if(array[id-2]=== ""){
-        array[array.indexOf("")] = array[id-1];
-        array[id-1] = "";
-        return array;
     }
     else if (array[id-3]=== ""){
       array[id-3] = array[id-2];
